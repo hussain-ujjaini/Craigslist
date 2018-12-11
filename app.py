@@ -4,7 +4,6 @@ class Home(object):
     @cherrypy.expose
     def index(self):
         return open('views/index.html')
-    index.exposed = True
 
     @cherrypy.expose
     @cherrypy.tools.accept(media='text/plain')
@@ -15,7 +14,6 @@ class Home(object):
         print (email)
         reg = open("views/print.html").read()
         return reg
-    register.exposed = True
 
 if __name__ == '__main__' :
     cherrypy.quickstart(Home())
