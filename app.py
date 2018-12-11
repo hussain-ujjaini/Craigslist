@@ -3,7 +3,7 @@ import cherrypy
 class Home(object):
     @cherrypy.expose
     def index(self):
-        return open('../templates/static/index.html')
+        return open('views/index.html')
     index.exposed = True
 
     @cherrypy.expose
@@ -13,7 +13,7 @@ class Home(object):
         email = cherrypy.request.params.get("email")
         psw = cherrypy.request.params.get("psw")
         print (email)
-        reg = open("../templates/static/print.html").read()
+        reg = open("views/print.html").read()
         return reg
     register.exposed = True
 
