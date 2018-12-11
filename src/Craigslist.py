@@ -25,6 +25,24 @@ class Craigslist:
                 status.append(inputs["status"])
                 datalist.append(inputs)
         print len(status)
+	
+    #Question 2 done by jeet
+    def getItemById(self, idInput):
+      for i in pid:
+       # print(i)
+        if i==idInput:
+          print(i)
+          index = pid.index(i)
+          print(index)
+          print("Item1: ", datalist[index])
+          
+          
+    def getItemByLocation(self, locInput1,locInput2):
+      for i in loc:
+        if i[0]==locInput1 and i[1]==locInput2:
+          print(i)
+          index = loc.index(i)
+          print("Item2: ", datalist[index])
 
     # Question 3 done by Hussain
     def getItemByStatus(self, statusInput):
@@ -68,4 +86,6 @@ if __name__ == '__main__':
     c.managing_json()
     #c.getItemByStatus("removed")
     #c.getItemsByUserId("53f6c9c96d1944af0b00000b")
+    #c.getItemById("53fcc82a45b6f4db35000001")
+    #c.getItemByLocation(36.16857232693774,-115.14401662181169)
     c.getItemsInRadius(40, 36.166540711883776,-115.14080871936427)
