@@ -25,6 +25,16 @@ class Craigslist:
                 status.append(inputs["status"])
                 datalist.append(inputs)
         print len(status)
+
+    #Question1 done by dhwani
+    def getsorteddata(self):
+
+    print "The list printed sorting by price in an ascending order: "
+    print sorted(data1, key = lambda i: i['price'])
+    
+    print "The list printed sorting by price in an descending order:"
+    print sorted(data1, key = lambda i: i['price'],reverse=True) 
+
 	
     #Question 2 done by jeet
     def getItemById(self, idInput):
@@ -65,20 +75,6 @@ class Craigslist:
         print userIdList
         return userIdList
 
-    # Question 4 done by Hussain
-    def getItemsInRadius(self, radius, latitude, longitude):
-        items = []
-        index = 0
-        for i in loc:
-            lat = latitude -
-            x1 = (radius * math.cos(latitude) * math.cos(longitude), radius * math.cos(latitude) * math.sin(longitude))
-            x2 = (float(i[0]), float(i[1]))
-            dst = distance.euclidean(x1, x2)
-            if dst < radius:
-                items.append(datalist[index])
-            index += 1
-        print items
-        return items
 
 
 if __name__ == '__main__':
@@ -88,4 +84,4 @@ if __name__ == '__main__':
     #c.getItemsByUserId("53f6c9c96d1944af0b00000b")
     #c.getItemById("53fcc82a45b6f4db35000001")
     #c.getItemByLocation(36.16857232693774,-115.14401662181169)
-    c.getItemsInRadius(40, 36.166540711883776,-115.14080871936427)
+    #c.getsorteddata()
