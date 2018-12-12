@@ -1,8 +1,6 @@
 import json
 from scipy.spatial import distance
-import math
-import numpy as np
-
+from math import sin,cos, radians, atan2, sqrt
 pid = []
 loc = []
 userId = []
@@ -14,7 +12,7 @@ datalist = []
 class Craigslist:
 
     def managing_json(self):
-        with open("../data/json_data.json", "r") as read_file:
+        with open("/home/meditab/Craigslist/data/json_data.json", "r") as read_file:
             data = json.load(read_file)
             print len(data)
             for inputs in data:
@@ -25,12 +23,15 @@ class Craigslist:
                 price.append(inputs["price"])
                 status.append(inputs["status"])
                 datalist.append(inputs)
-        print len(status)
+        print len(loc)
 	
     #Question 2 done by jeet
     def getItemById(self, idInput):
+      print("In getItemId: ", idInput[0:],pid)
       for i in pid:
         print(123)
+	print("i:",i)
+	print("input id: ",i,idInput)
         if i==idInput:
           print(idInput)
           index = pid.index(i)
@@ -47,9 +48,12 @@ class Craigslist:
 	  return datalist[index]
 
     def getItemByLocation1(self, locInput1):
+      
       for i in loc:
-        if i==locInput1:
-          print(i)
+	j=i
+	print("Compare:",str(j),locInput1)
+	j = str(j).replace(" ", "")
+        if j == locInput1:
           index = loc.index(i)
           print("Item2: ", datalist[index])
       	  return datalist[index] 	
@@ -86,11 +90,16 @@ class Craigslist:
 	    #longitude = longitude*3.14/180
             #dist = math.acos(math.sin(latitude) * math.sin(i[0]) + math.cos(latitude)*math.cos(i[0]) *(math.cos(longitude)-math.cos(i[1]))*6371)
             r = 6371
-	    Lat = np.deg2rad(latitude - float(i[0]))
-	    Long = np.deg2rad(longitude - float(i[1])) 
+	    lat1 = i[0]
+	    lon1 = i[1]
+	    lat2 = latitude
+	    lon2 = longitude
+	    dist_lat = float(lat2) - float(lat1)
+	    dist_lon = float(lon2) - float(lon1)
+ 	    
 
-	    a = math.sin(Lat/2) * math.sin(Lat/2) + math.cos(deg2rad(latitude)) * math.cos(deg2rad(i[0])) * math.sin(Long/2) * math.sin(Long/2);  
-    	    c = 2 * asin(sqrt(a));  
+	    a = sin(dist_lat / 2)**2 + cos(float(lat1)) * cos(float(lat2)) * sin(dist_lon / 2)**2  
+    	    c = 2 * atan2(sqrt(a), sqrt(1 - a))  
             dist = r * c
 	    
             if (dist < radius):
