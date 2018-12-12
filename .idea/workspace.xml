@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e4fd996-974a-4e41-a751-230c76bdb1d0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scratch.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Craigslist.py" afterPath="$PROJECT_DIR$/src/Craigslist.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,79 +23,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Craigslist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Craigslist.py">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scratch.json">
+      <file leaf-file-name="Craigslist.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Craigslist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="297" column="3" lean-forward="true" selection-start-line="297" selection-start-column="3" selection-end-line="297" selection-end-column="3" />
-              <folding>
-                <element signature="e#4#224#0" expanded="false" />
-                <element signature="e#38#96#0" expanded="false" />
-                <element signature="e#228#447#0" expanded="false" />
-                <element signature="e#262#321#0" expanded="false" />
-                <element signature="e#451#755#0" expanded="false" />
-                <element signature="e#485#543#0" expanded="false" />
-                <element signature="e#759#996#0" expanded="false" />
-                <element signature="e#797#855#0" expanded="false" />
-                <element signature="e#1000#1253#0" expanded="false" />
-                <element signature="e#1034#1092#0" expanded="false" />
-                <element signature="e#1257#1482#0" expanded="false" />
-                <element signature="e#1291#1349#0" expanded="false" />
-                <element signature="e#1486#1821#0" expanded="false" />
-                <element signature="e#1520#1579#0" expanded="false" />
-                <element signature="e#1825#2131#0" expanded="false" />
-                <element signature="e#1859#1918#0" expanded="false" />
-                <element signature="e#2135#2383#0" expanded="false" />
-                <element signature="e#2169#2226#0" expanded="false" />
-                <element signature="e#2387#2607#0" expanded="false" />
-                <element signature="e#2421#2479#0" expanded="false" />
-                <element signature="e#2611#2830#0" expanded="false" />
-                <element signature="e#2645#2704#0" expanded="false" />
-                <element signature="e#2834#3138#0" expanded="false" />
-                <element signature="e#2868#2926#0" expanded="false" />
-                <element signature="e#3142#3379#0" expanded="false" />
-                <element signature="e#3180#3238#0" expanded="false" />
-                <element signature="e#3383#3636#0" expanded="false" />
-                <element signature="e#3417#3475#0" expanded="false" />
-                <element signature="e#3640#3865#0" expanded="false" />
-                <element signature="e#3674#3732#0" expanded="false" />
-                <element signature="e#3869#4204#0" expanded="false" />
-                <element signature="e#3903#3962#0" expanded="false" />
-                <element signature="e#4208#4514#0" expanded="false" />
-                <element signature="e#4242#4301#0" expanded="false" />
-                <element signature="e#4518#4766#0" expanded="false" />
-                <element signature="e#4552#4609#0" expanded="false" />
-                <element signature="e#4770#4990#0" expanded="false" />
-                <element signature="e#4804#4862#0" expanded="false" />
-                <element signature="e#4994#5213#0" expanded="false" />
-                <element signature="e#5028#5087#0" expanded="false" />
-                <element signature="e#5217#5521#0" expanded="false" />
-                <element signature="e#5251#5309#0" expanded="false" />
-                <element signature="e#5525#5762#0" expanded="false" />
-                <element signature="e#5563#5621#0" expanded="false" />
-                <element signature="e#5766#6019#0" expanded="false" />
-                <element signature="e#5800#5858#0" expanded="false" />
-                <element signature="e#6023#6248#0" expanded="false" />
-                <element signature="e#6057#6115#0" expanded="false" />
-                <element signature="e#6252#6587#0" expanded="false" />
-                <element signature="e#6286#6345#0" expanded="false" />
-                <element signature="e#6591#6897#0" expanded="false" />
-                <element signature="e#6625#6684#0" expanded="false" />
-                <element signature="e#6901#7149#0" expanded="false" />
-                <element signature="e#6935#6992#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="18">
+              <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,8 +56,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="41" column="63" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+            <state relative-caret-position="321">
+              <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="53" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -199,14 +144,14 @@
         <option value="$PROJECT_DIR$/templates/static/print.html" />
         <option value="$PROJECT_DIR$/templates/static/index.html" />
         <option value="$PROJECT_DIR$/src/runserver.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/views/inputStatus.html" />
         <option value="$PROJECT_DIR$/views/inputUserid.html" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/inputxy.html" />
+        <option value="$PROJECT_DIR$/src/scratch.json" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/src/Craigslist.py" />
-        <option value="$PROJECT_DIR$/src/scratch.json" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -620,9 +565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,34 +599,10 @@
     <entry file="file://$PROJECT_DIR$/templates/static/index.html" />
     <entry file="file://$PROJECT_DIR$/templates/static/print.html" />
     <entry file="file://$PROJECT_DIR$/src/runserver.py" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/json_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4422" lean-forward="false" selection-start-line="0" selection-start-column="4422" selection-end-line="0" selection-end-column="4422" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/question4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -712,6 +631,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/question4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/inputxy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -720,86 +647,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scratch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="298" column="1" lean-forward="true" selection-start-line="298" selection-start-column="1" selection-end-line="298" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="41" column="63" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+        <state relative-caret-position="321">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="53" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Craigslist.py">
+    <entry file="file://$PROJECT_DIR$/data/json_data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="4422" lean-forward="false" selection-start-line="0" selection-start-column="4422" selection-end-line="0" selection-end-column="4422" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scratch.json">
+    <entry file="file://$PROJECT_DIR$/src/Craigslist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="297" column="3" lean-forward="true" selection-start-line="297" selection-start-column="3" selection-end-line="297" selection-end-column="3" />
-          <folding>
-            <element signature="e#4#224#0" expanded="false" />
-            <element signature="e#38#96#0" expanded="false" />
-            <element signature="e#228#447#0" expanded="false" />
-            <element signature="e#262#321#0" expanded="false" />
-            <element signature="e#451#755#0" expanded="false" />
-            <element signature="e#485#543#0" expanded="false" />
-            <element signature="e#759#996#0" expanded="false" />
-            <element signature="e#797#855#0" expanded="false" />
-            <element signature="e#1000#1253#0" expanded="false" />
-            <element signature="e#1034#1092#0" expanded="false" />
-            <element signature="e#1257#1482#0" expanded="false" />
-            <element signature="e#1291#1349#0" expanded="false" />
-            <element signature="e#1486#1821#0" expanded="false" />
-            <element signature="e#1520#1579#0" expanded="false" />
-            <element signature="e#1825#2131#0" expanded="false" />
-            <element signature="e#1859#1918#0" expanded="false" />
-            <element signature="e#2135#2383#0" expanded="false" />
-            <element signature="e#2169#2226#0" expanded="false" />
-            <element signature="e#2387#2607#0" expanded="false" />
-            <element signature="e#2421#2479#0" expanded="false" />
-            <element signature="e#2611#2830#0" expanded="false" />
-            <element signature="e#2645#2704#0" expanded="false" />
-            <element signature="e#2834#3138#0" expanded="false" />
-            <element signature="e#2868#2926#0" expanded="false" />
-            <element signature="e#3142#3379#0" expanded="false" />
-            <element signature="e#3180#3238#0" expanded="false" />
-            <element signature="e#3383#3636#0" expanded="false" />
-            <element signature="e#3417#3475#0" expanded="false" />
-            <element signature="e#3640#3865#0" expanded="false" />
-            <element signature="e#3674#3732#0" expanded="false" />
-            <element signature="e#3869#4204#0" expanded="false" />
-            <element signature="e#3903#3962#0" expanded="false" />
-            <element signature="e#4208#4514#0" expanded="false" />
-            <element signature="e#4242#4301#0" expanded="false" />
-            <element signature="e#4518#4766#0" expanded="false" />
-            <element signature="e#4552#4609#0" expanded="false" />
-            <element signature="e#4770#4990#0" expanded="false" />
-            <element signature="e#4804#4862#0" expanded="false" />
-            <element signature="e#4994#5213#0" expanded="false" />
-            <element signature="e#5028#5087#0" expanded="false" />
-            <element signature="e#5217#5521#0" expanded="false" />
-            <element signature="e#5251#5309#0" expanded="false" />
-            <element signature="e#5525#5762#0" expanded="false" />
-            <element signature="e#5563#5621#0" expanded="false" />
-            <element signature="e#5766#6019#0" expanded="false" />
-            <element signature="e#5800#5858#0" expanded="false" />
-            <element signature="e#6023#6248#0" expanded="false" />
-            <element signature="e#6057#6115#0" expanded="false" />
-            <element signature="e#6252#6587#0" expanded="false" />
-            <element signature="e#6286#6345#0" expanded="false" />
-            <element signature="e#6591#6897#0" expanded="false" />
-            <element signature="e#6625#6684#0" expanded="false" />
-            <element signature="e#6901#7149#0" expanded="false" />
-            <element signature="e#6935#6992#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

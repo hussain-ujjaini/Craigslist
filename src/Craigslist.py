@@ -3,6 +3,7 @@ import mpu
 import geopy
 from geopy.distance import geodesic, vincenty
 
+# Global Parameters
 pid = []
 loc = []
 userId = []
@@ -11,12 +12,14 @@ price = []
 status = []
 datalist = []
 sorted_data = []
+
+
 class Craigslist:
 
+    # Performs list seperation for each attribute in json object
     def managing_json(self):
         with open("/home/meditab/Documents/Craigslist/data/json_data.json", "r") as read_file:
             data = json.load(read_file)
-            #sorted_data = sorted(data, key=lambda k:k['price'])
             print len(data)
             for inputs in data:
                 pid.append(inputs["id"])
@@ -28,11 +31,7 @@ class Craigslist:
                 datalist.append(inputs)
         print len(status)
 
-    def sortByPrice(self):
-        print sorted_data
-        return sorted_data
-
-    # Question 3 done by Hussain
+    # Returns the items for matching status value
     def getItemsByStatus(self, statusInput):
         c = Craigslist()
         c.managing_json()
@@ -40,13 +39,11 @@ class Craigslist:
         for i in range(0, len(status)-1):
             print i
             if status[i] == statusInput:
-                #print data[0]
                 statusList.append(datalist[i])
                 print statusList
-        #print statusList
         return statusList
 
-
+    # Returns the items for matching userid value
     def getItemsByUserId(self, useridInput):
         c = Craigslist()
         c.managing_json()
@@ -55,11 +52,10 @@ class Craigslist:
         for i in range(len(userId)-1):
             if userId[i] == useridInput:
                 userIdList.append(datalist[i])
-        #print userIdList
         return userIdList
 
 
-    # Question 4 done by Hussain
+    # Returns the items for records lying inside radius value
     def getItemsInRadius(self, radius, latitude, longitude):
         c = Craigslist()
         c.managing_json()
@@ -80,16 +76,16 @@ class Craigslist:
             dst = mpu.haversine_distance((lat1, lon1), (latitude, longitude))
             '''
 
-            # using geopy
+            # using geopy library
             loc1 = (lat1, lon1)
             loc2 = (latitude, longitude)
 
+            # geopy distance calculation for 2 inputs in (lat,long) format
             dst = geopy.distance.geodesic(loc1, loc2).miles
             print "dst: ", dst
             if float(dst) < float(radius):
                 itemlist.append(datalist[index])
             index += 1
-        #print items
         return itemlist
 
 if __name__ == '__main__':
