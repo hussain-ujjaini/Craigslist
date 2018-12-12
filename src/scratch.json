@@ -1,0 +1,299 @@
+[
+  {
+    "status": "tos",
+    "loc": [
+      37.23255999192823,
+      -121.81020592213022
+    ],
+    "description": "Obo",
+    "price": 683,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5400ff987b7b598d61000057"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.233055784780944,
+      -121.80760435197755
+    ],
+    "description": null,
+    "price": 54,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "540100b97b7b598d61000067"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23281146218296,
+      -121.80912561385958
+    ],
+    "description": "silver bracelet w/ turquoise stone. has engravings on back but no one but you will know.",
+    "price": 49,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "540102f47b7b598d61000074"
+  },
+  {
+    "status": "removed",
+    "loc": [
+      37.23215439388443,
+      -121.82370724350093
+    ],
+    "description": "Green Ikea carpet",
+    "price": 25,
+    "userId": "54013c808e7039a471000001",
+    "id": "54013c8d8e7039a471000003"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.22909590573943,
+      -121.82521669990821
+    ],
+    "description": "Decorative fruit bowl Moroccan glass.",
+    "price": 25,
+    "userId": "54013c808e7039a471000001",
+    "id": "54013e908e7039a471000009"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23179020134816,
+      -121.82264974800152
+    ],
+    "description": "Kids bike",
+    "price": 60,
+    "userId": "53fe1fda56ef467e6800002f",
+    "id": "5408983822fb235f540000a5"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.229540144069546,
+      -121.82412709630812
+    ],
+    "description": "Boppy pillow with 2 covers. One cover unused. Used boppy twice. My Baby doesn't like it. Got this for $65 at Babysrus.",
+    "price": 40,
+    "userId": "54013c808e7039a471000001",
+    "id": "5413926368d79e446c0001f5"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.233430326221736,
+      -121.81068147210563
+    ],
+    "description": "Handmade one of kind like no other modern planter pot. 15\"h x 18\"w. Indoor or outdoor.",
+    "price": 197,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5413602b68d79e446c0001a8"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23427701548457,
+      -121.8089317076101
+    ],
+    "description": "artwork black and white modern",
+    "price": 10758,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5413517e68d79e446c00018a"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23255999192823,
+      -121.81020592213022
+    ],
+    "description": "Obo",
+    "price": 683,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5400ff987b7b598d61000057"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.233055784780944,
+      -121.80760435197755
+    ],
+    "description": null,
+    "price": 54,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "540100b97b7b598d61000067"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23281146218296,
+      -121.80912561385958
+    ],
+    "description": "silver bracelet w/ turquoise stone. has engravings on back but no one but you will know.",
+    "price": 49,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "540102f47b7b598d61000074"
+  },
+  {
+    "status": "removed",
+    "loc": [
+      37.23215439388443,
+      -121.82370724350093
+    ],
+    "description": "Green Ikea carpet",
+    "price": 25,
+    "userId": "54013c808e7039a471000001",
+    "id": "54013c8d8e7039a471000003"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.22909590573943,
+      -121.82521669990821
+    ],
+    "description": "Decorative fruit bowl Moroccan glass.",
+    "price": 25,
+    "userId": "54013c808e7039a471000001",
+    "id": "54013e908e7039a471000009"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23179020134816,
+      -121.82264974800152
+    ],
+    "description": "Kids bike",
+    "price": 60,
+    "userId": "53fe1fda56ef467e6800002f",
+    "id": "5408983822fb235f540000a5"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.229540144069546,
+      -121.82412709630812
+    ],
+    "description": "Boppy pillow with 2 covers. One cover unused. Used boppy twice. My Baby doesn't like it. Got this for $65 at Babysrus.",
+    "price": 40,
+    "userId": "54013c808e7039a471000001",
+    "id": "5413926368d79e446c0001f5"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.233430326221736,
+      -121.81068147210563
+    ],
+    "description": "Handmade one of kind like no other modern planter pot. 15\"h x 18\"w. Indoor or outdoor.",
+    "price": 197,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5413602b68d79e446c0001a8"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23427701548457,
+      -121.8089317076101
+    ],
+    "description": "artwork black and white modern",
+    "price": 10758,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5413517e68d79e446c00018a"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23255999192823,
+      -121.81020592213022
+    ],
+    "description": "Obo",
+    "price": 683,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5400ff987b7b598d61000057"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.233055784780944,
+      -121.80760435197755
+    ],
+    "description": null,
+    "price": 54,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "540100b97b7b598d61000067"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23281146218296,
+      -121.80912561385958
+    ],
+    "description": "silver bracelet w/ turquoise stone. has engravings on back but no one but you will know.",
+    "price": 49,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "540102f47b7b598d61000074"
+  },
+  {
+    "status": "removed",
+    "loc": [
+      37.23215439388443,
+      -121.82370724350093
+    ],
+    "description": "Green Ikea carpet",
+    "price": 25,
+    "userId": "54013c808e7039a471000001",
+    "id": "54013c8d8e7039a471000003"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.22909590573943,
+      -121.82521669990821
+    ],
+    "description": "Decorative fruit bowl Moroccan glass.",
+    "price": 25,
+    "userId": "54013c808e7039a471000001",
+    "id": "54013e908e7039a471000009"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23179020134816,
+      -121.82264974800152
+    ],
+    "description": "Kids bike",
+    "price": 60,
+    "userId": "53fe1fda56ef467e6800002f",
+    "id": "5408983822fb235f540000a5"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.229540144069546,
+      -121.82412709630812
+    ],
+    "description": "Boppy pillow with 2 covers. One cover unused. Used boppy twice. My Baby doesn't like it. Got this for $65 at Babysrus.",
+    "price": 40,
+    "userId": "54013c808e7039a471000001",
+    "id": "5413926368d79e446c0001f5"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.233430326221736,
+      -121.81068147210563
+    ],
+    "description": "Handmade one of kind like no other modern planter pot. 15\"h x 18\"w. Indoor or outdoor.",
+    "price": 197,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5413602b68d79e446c0001a8"
+  },
+  {
+    "status": "tos",
+    "loc": [
+      37.23427701548457,
+      -121.8089317076101
+    ],
+    "description": "artwork black and white modern",
+    "price": 10758,
+    "userId": "5400fd247b7b598d61000041",
+    "id": "5413517e68d79e446c00018a"
+  }
+]

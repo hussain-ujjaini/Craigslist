@@ -64,7 +64,7 @@ class Craigslist:
         c = Craigslist()
         c.managing_json()
 
-        items = []
+        itemlist = []
         index = 0
         for i in loc:
             lat1 = float(i[0])
@@ -74,7 +74,7 @@ class Craigslist:
             print "lon1: ", lon1
             print "lat2: ", latitude
             print "lon1: ", longitude
-
+            print "radius: ", radius
             '''
             # using mpu
             dst = mpu.haversine_distance((lat1, lon1), (latitude, longitude))
@@ -84,12 +84,13 @@ class Craigslist:
             loc1 = (lat1, lon1)
             loc2 = (latitude, longitude)
 
-            dst = geopy.distance.vincenty(loc1, loc2).miles
-            if dst < radius:
-                items.append(datalist[index])
+            dst = geopy.distance.geodesic(loc1, loc2).miles
+            print "dst: ", dst
+            if float(dst) < float(radius):
+                itemlist.append(datalist[index])
             index += 1
         #print items
-        return items
+        return itemlist
 
 if __name__ == '__main__':
     c = Craigslist()

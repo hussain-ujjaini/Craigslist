@@ -39,7 +39,7 @@ class app(object):
                 print "in userid check"
                 userid = cherrypy.request.params.get("userid")
                 print userid
-                return json.dumps(c.getItemsByUserId(str(userid.encode('ascii'))))
+                return json.dumps(c.getItemsByUserId(str(userid)))
 
             else:
                 return "some error occured"
