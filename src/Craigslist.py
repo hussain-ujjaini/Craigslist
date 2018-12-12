@@ -29,11 +29,11 @@ class Craigslist:
     #Question1 done by dhwani
     def getsorteddata(self):
 
-    print "The list printed sorting by price in an ascending order: "
-    print sorted(data1, key = lambda i: i['price'])
+    	print "The list printed sorting by price in an ascending order: "
+    	print sorted(datalist, key = lambda i: i['price'])
     
-    print "The list printed sorting by price in an descending order:"
-    print sorted(data1, key = lambda i: i['price'],reverse=True) 
+    	print "The list printed sorting by price in an descending order:"
+    	print sorted(datalist, key = lambda i: i['price'],reverse=True) 
 
 	
     #Question 2 done by jeet
@@ -74,6 +74,32 @@ class Craigslist:
                 userIdList.append(datalist[i])
         print userIdList
         return userIdList
+   
+    #Question 4 done by Dhwani
+    def get_items_in_radius(self,latitudeInDegrees,longitudeInDegrees,distanceInKm):
+     lat = math.radians(latitudeInDegrees)
+     lon = math.radians(longitudeInDegrees)
+     distance = 1000*distanceInKm
+    
+     test_lat = -154
+     test_lon =  140
+    
+     RADIUS_OF_EARTH  = 6371
+     # Radius of the parallel at given latitude
+     pradius = RADIUS_OF_EARTH*math.cos(lat)
+    
+     latMin = lat - distance/RADIUS_OF_EARTH
+     latMax = lat + distance/RADIUS_OF_EARTH
+     lonMin = lon - distance/pradius
+     lonMax = lon + distance/pradius
+     rad2deg = math.degrees
+     print(rad2deg(latMin), rad2deg(lonMin), rad2deg(latMax), rad2deg(lonMax))
+    
+     if(test_lat>=latMin and test_lat<=latMax and test_lon>=lonMin and test_lon<=lonMax):
+       print("Point lies within the vicinity")
+      
+     else:
+       print("Point outside of the vicinity")
 
 
 
@@ -84,4 +110,5 @@ if __name__ == '__main__':
     #c.getItemsByUserId("53f6c9c96d1944af0b00000b")
     #c.getItemById("53fcc82a45b6f4db35000001")
     #c.getItemByLocation(36.16857232693774,-115.14401662181169)
-    #c.getsorteddata()
+    c.getsorteddata()
+    c.get_items_in_radius(36.16327763694836,-115.14098095792328,20)
