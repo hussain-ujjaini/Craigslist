@@ -1,6 +1,7 @@
 import json
 from scipy.spatial import distance
 import math
+import numpy as np
 
 pid = []
 loc = []
@@ -29,12 +30,12 @@ class Craigslist:
     #Question 2 done by jeet
     def getItemById(self, idInput):
       for i in pid:
-       # print(i)
+        print(123)
         if i==idInput:
-          print(i)
+          print(idInput)
           index = pid.index(i)
-          print(index)
           print("Item1: ", datalist[index])
+      	  return datalist[index]
           
           
     def getItemByLocation(self, locInput1,locInput2):
@@ -43,6 +44,15 @@ class Craigslist:
           print(i)
           index = loc.index(i)
           print("Item2: ", datalist[index])
+	  return datalist[index]
+
+    def getItemByLocation1(self, locInput1):
+      for i in loc:
+        if i==locInput1:
+          print(i)
+          index = loc.index(i)
+          print("Item2: ", datalist[index])
+      	  return datalist[index] 	
 
     # Question 3 done by Hussain
     def getItemByStatus(self, statusInput):
@@ -65,20 +75,32 @@ class Craigslist:
         print userIdList
         return userIdList
 
-    # Question 4 done by Hussain
+     #Question 4 by jeet
     def getItemsInRadius(self, radius, latitude, longitude):
         items = []
         index = 0
         for i in loc:
-            lat = latitude -
-            x1 = (radius * math.cos(latitude) * math.cos(longitude), radius * math.cos(latitude) * math.sin(longitude))
-            x2 = (float(i[0]), float(i[1]))
-            dst = distance.euclidean(x1, x2)
-            if dst < radius:
+	    #i[0] = (i[0]*3.14)/180
+	    #i[1] = (i[1]*3.14)/180
+	    #latitude = latitude*3.14/180
+	    #longitude = longitude*3.14/180
+            #dist = math.acos(math.sin(latitude) * math.sin(i[0]) + math.cos(latitude)*math.cos(i[0]) *(math.cos(longitude)-math.cos(i[1]))*6371)
+            r = 6371
+	    Lat = np.deg2rad(latitude - float(i[0]))
+	    Long = np.deg2rad(longitude - float(i[1])) 
+
+	    a = math.sin(Lat/2) * math.sin(Lat/2) + math.cos(deg2rad(latitude)) * math.cos(deg2rad(i[0])) * math.sin(Long/2) * math.sin(Long/2);  
+    	    c = 2 * asin(sqrt(a));  
+            dist = r * c
+	    
+            if (dist < radius):
+		index = loc.index(i)
                 items.append(datalist[index])
-            index += 1
+            
         print items
         return items
+
+    
 
 
 if __name__ == '__main__':
@@ -88,4 +110,5 @@ if __name__ == '__main__':
     #c.getItemsByUserId("53f6c9c96d1944af0b00000b")
     #c.getItemById("53fcc82a45b6f4db35000001")
     #c.getItemByLocation(36.16857232693774,-115.14401662181169)
-    c.getItemsInRadius(40, 36.166540711883776,-115.14080871936427)
+    #c.getItemsInRadius(20, 20,100)
+    #c.getItemByLocation1([36.16857232693774, -115.14401662181169])
