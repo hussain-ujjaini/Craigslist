@@ -53,9 +53,31 @@ class Craigslist:
         for i in range(len(userId)-1):
             if userId[i] == useridInput:
                 userIdList.append(datalist[i])
-        print userIdList
+        #print userIdList
         return userIdList
 
+
+    # Question 4 done by Hussain
+    def getItemsInRadius(self, radius, latitude, longitude):
+        c = Craigslist()
+        c.managing_json()
+
+        items = []
+        index = 0
+        for i in loc:
+            lat1 = float(i[0])
+            lon1 = float(i[1])
+
+            print "lat1: ", lat1
+            print "lon1: ", lon1
+            print "lat2: ", latitude
+            print "lon1: ", longitude
+            dst = mpu.haversine_distance((lat1, lon1), (latitude, longitude))
+            if dst < radius:
+                items.append(datalist[index])
+            index += 1
+        #print items
+        return items
 
 if __name__ == '__main__':
     c = Craigslist()
