@@ -1,6 +1,5 @@
 import json
-from scipy.spatial import distance
-import math
+import mpu
 
 pid = []
 loc = []
@@ -9,12 +8,13 @@ description = []
 price = []
 status = []
 datalist = []
-
+sorted_data = []
 class Craigslist:
 
     def managing_json(self):
-        with open("../data/json_data.json", "r") as read_file:
+        with open("/home/meditab/Documents/Craigslist/data/json_data.json", "r") as read_file:
             data = json.load(read_file)
+            #sorted_data = sorted(data, key=lambda k:k['price'])
             print len(data)
             for inputs in data:
                 pid.append(inputs["id"])
@@ -26,20 +26,29 @@ class Craigslist:
                 datalist.append(inputs)
         print len(status)
 
-    # Question 3 done by Hussain
-    def getItemByStatus(self, statusInput):
+    def sortByPrice(self):
+        print sorted_data
+        return sorted_data
 
+    # Question 3 done by Hussain
+    def getItemsByStatus(self, statusInput):
+        c = Craigslist()
+        c.managing_json()
         statusList = []
         for i in range(0, len(status)-1):
             print i
             if status[i] == statusInput:
                 #print data[0]
                 statusList.append(datalist[i])
-        print statusList
+                print statusList
+        #print statusList
         return statusList
 
 
     def getItemsByUserId(self, useridInput):
+        c = Craigslist()
+        c.managing_json()
+
         userIdList = []
         for i in range(len(userId)-1):
             if userId[i] == useridInput:
@@ -47,25 +56,11 @@ class Craigslist:
         print userIdList
         return userIdList
 
-    # Question 4 done by Hussain
-    def getItemsInRadius(self, radius, latitude, longitude):
-        items = []
-        index = 0
-        for i in loc:
-            lat = latitude -
-            x1 = (radius * math.cos(latitude) * math.cos(longitude), radius * math.cos(latitude) * math.sin(longitude))
-            x2 = (float(i[0]), float(i[1]))
-            dst = distance.euclidean(x1, x2)
-            if dst < radius:
-                items.append(datalist[index])
-            index += 1
-        print items
-        return items
-
 
 if __name__ == '__main__':
     c = Craigslist()
     c.managing_json()
-    #c.getItemByStatus("removed")
+    #c.getItemsByStatus("removed")
     #c.getItemsByUserId("53f6c9c96d1944af0b00000b")
-    c.getItemsInRadius(40, 36.166540711883776,-115.14080871936427)
+    c.getItemsInRadius(15, 36.166540711883776,-115.14080871936427)
+    #c.sortByPrice()

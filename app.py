@@ -1,19 +1,47 @@
+from src.Craigslist import *
 import cherrypy
+import json
 
-class Home(object):
+class app(object):
+
     @cherrypy.expose
     def index(self):
         return open('views/index.html')
 
     @cherrypy.expose
     @cherrypy.tools.accept(media='text/plain')
-    def register(self, email=None, psw=None):
-        print "in register"
-        email = cherrypy.request.params.get("email")
-        psw = cherrypy.request.params.get("psw")
-        print (email)
-        reg = open("views/print.html").read()
-        return reg
+    def api(self, inputbtn):
+        if(cherrypy.request.params.get("inputbtn")=="status"):
+            return open('views/inputStatus.html')
+        elif(cherrypy.request.params.get("inputbtn")=="userid"):
+            return open('views/inputUserid.html')
+        else:
+            return "some error occured"
+
+    @cherrypy.expose
+    @cherrypy.tools.accept(media='text/plain')
+    def getitemslist(self, **params):
+        c = Craigslist()
+        for k in params:
+            if k == "status":
+                print "in status check"
+                status = cherrypy.request.params.get("status")
+                print type(status)
+                #status = str(status)
+                print type(status)
+                statusList = c.getItemsByStatus(status)
+                print statusList
+                return json.dumps(statusList)
+
+            elif k == "userid":
+                print "in userid check"
+                userid = cherrypy.request.params.get("userid")
+                print userid
+                return json.dumps(c.getItemsByUserId(str(userid.encode('ascii'))))
+
+            else:
+                return "some error occured"
+
 
 if __name__ == '__main__' :
-    cherrypy.quickstart(Home())
+    cherrypy.quickstart(app())
