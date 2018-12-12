@@ -48,9 +48,9 @@ class app(object):
     @cherrypy.tools.accept(media='text/plain')
     def getitemsinradius(self, **params):
         c = Craigslist()
-        radius = cherrypy.request.params.get("xy")
-        latitude = cherrypy.request.params.get("xx")
-        longitude = cherrypy.request.params.get("yy")
+        radius = cherrypy.request.params.get("radius")
+        latitude = cherrypy.request.params.get("latitude")
+        longitude = cherrypy.request.params.get("longitude")
         return json.dumps(c.getItemsInRadius(radius, latitude, longitude))
 
 

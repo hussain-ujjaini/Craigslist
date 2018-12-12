@@ -84,7 +84,7 @@ class Craigslist:
             loc1 = (lat1, lon1)
             loc2 = (latitude, longitude)
 
-            dst = geopy.distance.vincenty(loc1, loc2)
+            dst = geopy.distance.vincenty(loc1, loc2).miles
             if dst < radius:
                 items.append(datalist[index])
             index += 1
