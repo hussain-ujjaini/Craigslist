@@ -1,5 +1,7 @@
 import json
 import mpu
+import geopy
+from geopy.distance import geodesic, vincenty
 
 pid = []
 loc = []
@@ -72,7 +74,17 @@ class Craigslist:
             print "lon1: ", lon1
             print "lat2: ", latitude
             print "lon1: ", longitude
+
+            '''
+            # using mpu
             dst = mpu.haversine_distance((lat1, lon1), (latitude, longitude))
+            '''
+
+            # using geopy
+            loc1 = (lat1, lon1)
+            loc2 = (latitude, longitude)
+
+            dst = geopy.distance.vincenty(loc1, loc2)
             if dst < radius:
                 items.append(datalist[index])
             index += 1
